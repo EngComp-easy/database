@@ -23,7 +23,8 @@ void bubblesort(int vetor[], int tam){
         trocou = true;
       }//if
     }//for
-  }
+    tam--;
+  }//while
 }
 
 int main(){
