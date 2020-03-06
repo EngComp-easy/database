@@ -10,17 +10,25 @@ void imprime(int vetor[], int tam){
   printf("\n");
 }
 
+void troca(int *a, int *b){
+  int aux = *a;
+  *a = *b;
+  *b = aux;
+}
+
 void selectionsort(int vetor[], int tam){
-  /*int x = 0;
-  int aux, menor = vetor[x];
-  while(tam != 0){ //procura menor
-    if(menor > vetor[x + 1]){
-      menor = vetor[x + 1];
+  int min;
+  //Limite de movimento um por um
+  for(int i = 0; i < tam; i++){
+    //minimo elemento do vetor
+    min = i;
+    for(int j = 0; j < tam; j++){
+      if(vetor[j] < vetor[min]){
+        min = j;
+      }
+      troca(&vetor[min], &vetor[i]);
     }
-    tam--;
-    x++;
-  }//achou menor
-  */
+  }
 }
 
 int main(){
