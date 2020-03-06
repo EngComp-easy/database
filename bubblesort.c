@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void imprime(int vetor[], int tam){
   for(int i = 0; i<tam; i++){
@@ -23,7 +24,11 @@ void bubblesort(int vetor[], int tam){
 
 
 int main(){
-  int vetor[10] = {9, 13, 5, 67, 89, 96, 34, 53, 6, 10};
+  srand (time(NULL));
+  int vetor[10];
+  for(int i = 0; i<10; i++){
+    vetor[i]=rand() % 100;
+  }
   imprime(vetor, 10);
   bubblesort(vetor, 10);
   imprime(vetor, 10);
