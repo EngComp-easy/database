@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <stdbool.h>
+//#include <stdbool.h>
 #include <time.h>
 
 void imprime(int vetor[], int tam){
