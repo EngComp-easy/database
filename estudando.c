@@ -43,7 +43,7 @@ void selectionsort(int vetor[], int tam){
   int min = 0;
   for(int i = 0; i < tam; i++){
     min = i;
-    for(int j = 0; j < tam; j++){
+    for(int min = 0; j < tam; j++){
       if(vetor[j] < vetor[min]){
         min = j;
       }
