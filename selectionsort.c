@@ -22,7 +22,7 @@ void selectionsort(int vetor[], int tam){
   for(int i = 0; i < tam; i++){
     //minimo elemento do vetor
     min = i;
-    for(int j = 0; j < tam; j++){
+    for(int j = min; j < tam; j++){
       if(vetor[j] < vetor[min]){
         min = j;
       }
